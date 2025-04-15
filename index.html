@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- untuk icon wabsite-->
+    <link rel="shortcut icon" href="img/my icon.ico" type="image/x-icon">
+    <title>My Website</title>
+    <!-- link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <!-- untuk navigasi bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">My Website</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark">
+              <li class="nav-item">
+                <!-- untuk navigasi bar menu home -->
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <!-- untuk navigasi bar  menu article-->
+                <a class="nav-link" href="#article">Article</a>
+              </li>
+              <li class="nav-item">
+                <!-- untuk navigasi bar menu gallery -->
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <!-- section untuk hero yang berisi gambar, judul dan deskripri -->
+    <section class="text-center p-5 bg-danger-subtle text-sm-start" id="hero">
+        <div class="container d-sm-flex flex-sm-row-reverse align-items-center">
+            <img class="rounded img-fluid" width="300" src="img/perpustakaan.jpg" alt="">
+            <div>
+                <h1 class="fw-bold display-4">Libraries store the energy that fuels imagination</h1>
+                <h4 class="lead display-6">Perpustakaan adalah tempat paling damai di dunia. Di sana, pikiran bisa terbang tanpa batas</h4>
+            </div>
+        </div>
+    </section>
+    <!-- section untuk artikel yang berisi bagian dari artikel menggunakan card pada bootstrap yang lebih responsif-->
+    <section class="text-center p-5" id="article">
+        <h1 class="fw-bold display-4 pb-3">Artikel</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col justify-content-center">
+              <div class="card h-100">
+                <img src="img/automic_habit.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Automic Habit</h5>
+                  <p class="card-text">Buku ini cocok bagi anda yang ingin mengubah kebiasaan anda</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/security_analisis.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Security Analysis by benjamin graham</h5>
+                  <p class="card-text">Buku yang membahas tentang bagaimana cara berinvestasi yang mampu menghasilkan profit yang signifikan</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated 10 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/sejarah_yang_disembunyikan.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sejarah Yang Disembunyikan</h5>
+                  <p class="card-text">Berisi tentang sejarah dunia yang disembunyikan</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated 12 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- section untuk gallery yang berisi gambar-gambar menggunakan carousel pada bootstrap-->
+    <section class="text-center p-5 bg-danger-subtle" id="gallery">
+        <div class="container">
+            <h1 class="fw-bold display-4 pb-3">Gallery</h1>
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/perpus1.jpg" class="rounded d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/perpus2.jpg" class="rounded d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/perpus3.jpg" class="rounded d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+    </section>
+    <!-- section untuk footer yang berisi icon sosial media dan copyright -->
+    <footer class="text-center p-5">
+        <div>
+            <a href="https://api.whatsapp.com/send/?phone=6285225401218&text&type=phone_number&app_absent=0"><i class="bi bi-whatsapp h2 p-2 text-dark"></i></a>
+            <a href="#"><i class="bi bi-twitter-x h2 p-2 text-dark"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=ex3oezp "><i class="bi bi-instagram h2 p-2 text-dark"></i></a>
+        </div>
+        <br></br>
+        <div>
+            <h6>Copyright by Charlie</h6>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
